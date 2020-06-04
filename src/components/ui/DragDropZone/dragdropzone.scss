@@ -1,0 +1,229 @@
+.drag-section-container {
+  width: 100%;
+  height: 100%;
+  border: 2px dashed #84b6a3;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.drag-header {
+  text-align: center;
+  font-size: 0.75rem;
+}
+#drop-area {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0.5em;
+}
+#drop-area.highlight {
+  border-color: #84b6a3;
+}
+p {
+  margin-top: 0;
+  font-size: 0.65rem;
+}
+.my-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.65rem;
+  color: #8a8787;
+}
+.post-form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.65rem;
+  color: #8a8787;
+}
+.my-form p {
+  margin: 0.5em 0.5em;
+}
+#gallery {
+  margin-top: 0.8em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+#post-gallery {
+  margin-left: 0.5em;
+  border-radius: 15px;
+  background-color: #84b6a3;
+  width: 45%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+  justify-content: center;
+}
+.image-container {
+  position: relative;
+  width: 100px;
+  margin-right: 1em;
+}
+.image-container img {
+  width: 85px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.main-image-container {
+  margin-left: 0.5em;
+  margin-top: 0.5em;
+  position: relative;
+  width: 160px;
+  margin-right: 1em;
+}
+.main-image-container img {
+  width: 152px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.images-wrapper {
+  margin-top: 0.5em;
+  display: flex;
+  flex-direction: column;
+}
+.small-image-container {
+  position: relative;
+  width: 58px;
+  margin-right: 1em;
+}
+.small-image-container img {
+  width: 53px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.post-image-control {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  right: 2px;
+  padding: 0;
+  transition: background, 160ms ease-in-out;
+  &:hover {
+    background-color: rgba(154, 151, 151, 0.29);
+  }
+}
+.remove-btn {
+  color: #ca4240;
+  width: fit-content;
+  cursor: pointer;
+  &:hover {
+    color: white;
+  }
+}
+
+.post-form-input {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  width: 28%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.post-form-input label {
+  display: flex;
+  align-self: center;
+  width: 30%;
+}
+
+.filenames-container {
+  margin-right: 0.5em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  width: 28%;
+  border-radius: 15px;
+  border: 1px solid #84b6a3;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.filename {
+  margin: 0.5em;
+  width: 97%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px;
+  background: #84b6a3;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid #84b6a3;
+  color: white;
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+.button:hover {
+  background: #ddd;
+}
+#fileElem {
+  display: none;
+}
+.dndzone-form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.post-dndzone-form-control {
+  margin-top: 3em;
+  display: flex;
+  justify-content: center;
+}
+.progress-container {
+  width: 300px;
+}
+.progress-line {
+  width: 20%;
+  height: 100%;
+  border-radius: 8px;
+  background-color: #6bccf9;
+  transition: width 0.3s ease-in-out;
+}
+.aws-gallery {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.loaded-images {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.aws-gallery p {
+  text-align: center;
+  color: darkred;
+  font-size: 2em;
+  font-weight: 700;
+}
+.loaded-images img {
+  width: 100px;
+  align-self: center;
+  padding: 1em;
+}
+.upload-success {
+  margin-top: 0.5em;
+  font-size: 1rem;
+  color: #84b6a3;
+}

@@ -1,0 +1,22 @@
+.info-wrapper {
+  width: 65%;
+  display: flex;
+}
+.info-container {
+  width: 100%;
+  display: flex;
+}
+.info-avatar {
+  width: 25%;
+}
+.info-avatar img {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.info-name {
+  width: 70%;
+  font-size: 1.2em;
+  cursor: pointer;
+}
